@@ -95,6 +95,9 @@ align-items: center;
 flex-flow: row wrap;
 }
 
+header{
+  padding: 15px 0;
+}
 /*header styles*/
 
 
@@ -103,6 +106,13 @@ header .content-wrapper{
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  margin:0;
+}
+
+.header-divider{
+  width: 100%;
+  height:1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav{
@@ -110,30 +120,50 @@ header nav{
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  width: 60%;
 }
 
 header nav ul{
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 
 /*footer styles*/
 
+footer{
+  flex-direction: column;
+}
 
+footer p{
+margin: 0;
+}
 
+footer .content-wrapper{
+  width: 55%
+  margin: 50px 0;
+}
+footer .contact{
+  margin-bottom: 50px;
+}
 footer .social{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 20px 0;
 }
 
 .social .social-icons{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 50px 0;
 }
 
+footer .copyright{
+  margin: 20px 0;
+}
 
 /*--------------------------- MAIN STYLES ----------------------------*/
 
@@ -143,12 +173,27 @@ footer .social{
   justify-content: center;
 }
 
+.form-description h2{
+  padding: 20px 0;
+}
+
+.form-description p{
+  padding-bottom: 30px;
+}
+
+.form h3{
+padding: 20px 0;
+}
+
+
+
 
 aside{
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  
 }
 
 .features {
@@ -156,12 +201,22 @@ aside{
   justify-content: center;
   flex-flow: row wrap;
 }
+.features p{
+  margin: 0;
+}
+
+.features article{
+  width: 63%;
+  margin: 30px 0;
+} 
 
 article .features-item-description{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 40px 0 30px 0;
+
 }
 
 section .reviews{
@@ -170,6 +225,18 @@ section .reviews{
   flex-flow: row wrap;
 }
 
+section .reviews h2{
+margin-bottom: 40px;
+}
+
+section .reviews h3{
+  margin: 20px 0;
+  width: 55%;
+}
+
+.reviews{
+  margin: 50px 0;
+}
 /*=======================================================================================
 ABOUT PAGE
 =======================================================================================*/
@@ -297,7 +364,34 @@ FAQ PAGE
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/*----------header----------*/
+
+    header nav{
+      width: 60%;
+}
+header nav ul{
+  width: 55%;
+  margin: 20px 0 15px 0;
+}
+.header-divider{
+
+}
+
+/*----------footer------------*/
+footer .content-wrapper{
+  width: 55%;
+  margin: 50px 0;
+}
+/*-----------main--------------*/
+.features article{
+  width: 60%;
+}
+.reviews h3{
+  width: 50%;
+}
+.content-wrapper{
+  width: 90%;
+}
 }
 
 @media print,
