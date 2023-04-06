@@ -446,7 +446,7 @@ width: 65%;
 
 .footer-content{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -480,6 +480,9 @@ padding-top: 20px;
 /*===================================================================================
 faq page tablet
 ====================================================================================*/
+header{
+  padding: 15px 0;
+}
 .faq .content-wrapper{
   justify-content: space-between;
   }
@@ -490,11 +493,66 @@ faq page tablet
     width:100%;
   }
 }
+
 @media only screen and (min-width: 1200px){
 /*-------desktop styles---------*/
 
+.content-wrapper{
+  max-width: 960px;
 }
 
+
+/*-------hero area-----------*/
+.hero-area h1{
+  width: 60%;
+}
+aside .content-wrapper{
+  justify-content: space-around;
+}
+aside .content-wrapper .form-description,
+aside .content-wrapper .form{
+  width: 30%;
+}
+/*-------features------------*/
+.features article{
+  flex-basis: 30%;
+}
+.features h2{
+  width: 90%;
+}
+/*-----------reviews-----------*/
+.reviews article div{
+  width: 49%;
+}
+/*-----------footer-------------*/
+footer .content-wrapper{
+  width: 100%;
+}
+.footer-content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .copyright{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/*==========================================================================
+about page desktop
+==========================================================================*/
+.mission h2,
+.contact-section .content-wrapper h2{
+  width: 95%;
+}
+
+/*=============================================================================
+faq page desktop
+=============================================================================*/
+.faq h2{
+  width: 100%;
+}
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
