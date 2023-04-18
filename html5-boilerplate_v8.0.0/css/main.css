@@ -126,10 +126,10 @@ address {
   font-style: normal;
 }
 img{
-
+  width: 100%;
 }
 figure{
-
+  margin: 0;
 }
 .content-wrapper{
   width: 90%;
@@ -155,6 +155,13 @@ header{
 }
 /*header styles*/
 
+header figure{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+}
 
 header .content-wrapper{
   display: flex;
@@ -162,9 +169,7 @@ header .content-wrapper{
   justify-content: center;
   align-items: center;
   margin:0;
-  
 }
-
 .header-divider{
   width: 100%;
   height:1px;
@@ -233,6 +238,10 @@ footer .copyright{
   flex-flow: row wrap;
   justify-content: center;
   height: 500px;
+  background: url("../img/unplugged-retreat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form-description h2{
@@ -259,9 +268,14 @@ aside{
 }
 
 .features {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url("../img/unplugged-retreat-features.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .features-icon{
   width: 60px;
@@ -287,6 +301,7 @@ article .features-item-description{
 
 }
 
+
 section .reviews{
   display: flex;
   justify-content: center;
@@ -295,7 +310,7 @@ section .reviews{
 
 section .reviews h2{
 margin-bottom: 40px;
-line-height: 30px;
+line-height: 1;
 }
 
 section .reviews h3{
@@ -309,6 +324,10 @@ section .reviews h3{
   flex-flow: row wrap;
   background-color: #2a423a;
 }
+.reviews figure{
+  width:100%;
+}
+
 /*=======================================================================================
 ABOUT PAGE
 =======================================================================================*/
@@ -359,7 +378,6 @@ FAQ PAGE
 .faq-content h4{
   line-height: 1.333;
 }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -480,13 +498,14 @@ input[type=button] {
   margin: 100px 0;
 }
 header{
-  margin: 33px 0;
+  margin: 0;
   display: flex;
   justify-content: space-around;
 }
 .header .content-wrapper{
   width: 100%;
   justify-content: space-between;
+  margin: 33px 0;
 }
 .header nav{
   width: 33%;
@@ -494,10 +513,18 @@ header{
 header nav ul{
   display: flex;
  justify-content: space-between;
+ 
 }
 
 .header-divider{
   display: none;
+}
+header figure{
+width: 33%;
+display: flex;
+flex-flow: row wrap;
+justify-content: flex-start;
+align-content: center;
 }
 h1{
   line-height: 48px;
@@ -508,7 +535,8 @@ h2{
   font-size: 2.25em;
 }
 h3,h4{
-  font-size: 1.875em;
+  font-size: 1.5em;
+  line-height: 30px;
 }
 /*------------hero area----------*/
 
@@ -518,14 +546,31 @@ aside .content-wrapper{
   flex-flow: row wrap;
   justify-content: space-between;
 }
-
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+}
 aside .content-wrapper .form-description,
 aside .content-wrapper .form{
   width: 40%;
   margin: 0;
 }
+.form-description p{
+  font-size: 1.125em;
+  line-height: 18px;
+}
 /*-----------features---------------*/
-
+.features{
+margin-top: 100px;
+width: 100%;
+}
+.features h2 {
+  margin-bottom: 20px;
+}
+.features .content-wrapper{
+  width: 100%;
+}
 .features article{
   display: flex;
   justify-content: center;
@@ -533,9 +578,12 @@ aside .content-wrapper .form{
   flex-flow: column wrap;
   flex-basis: 50%;
 }
+.features article p{
+  font-size: 1em;
+}
 
 .features .features-item-description{
-  width: 50%;
+  width: 60%;
 }
 /*-----------reviews----------------*/
 
@@ -543,15 +591,20 @@ aside .content-wrapper .form{
   display: flex;
   justify-content: space-between;
 }
-.reviews article div{
+.reviews article div,
+.reviews article figure{
   width: 49%;
+}
+.reviews h2{
+  width: 85%;
+}
+.reviews h3 {
+  width: 75%;
+  margin: 0;
 }
 /*----------footer-----------------*/
 
-footer .content-wrapper{
-margin: 100px;
-width: 65%;
-}
+
 footer h4{
   font: 1.5em;
 }
@@ -559,6 +612,7 @@ footer h4{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 footer p{
   line-height: 18px;
@@ -571,6 +625,7 @@ footer .copyright{
 }
 footer .contact h4{
   font-size: 1.5em;
+  margin-bottom: 40px;
 }
 /*==================================================================================
 about page tablet 
@@ -593,6 +648,7 @@ padding-top: 20px;
   justify-content: space-between;
   align-items: flex-start;
 }
+
 /*===================================================================================
 faq page tablet
 ====================================================================================*/
@@ -608,7 +664,7 @@ header{
   .faq h2{
     width:100%;
   }
-  .faq h4, p{
+  .faq h4, .faq p{
     line-height: 15.75px;
     font-size:.0875em;
   }
@@ -635,10 +691,12 @@ font-size: 1.125em;
 }
 /*-------hero area-----------*/
 .hero-area h1{
-  width: 60%;
+  width: 70%;
+  font-size: 3.75em;
 }
 aside .content-wrapper{
   justify-content: space-around;
+  width: 100%;
 }
 aside .content-wrapper .form-description,
 aside .content-wrapper .form{
@@ -651,10 +709,23 @@ aside .content-wrapper .form{
 .features h2{
   width: 90%;
 }
+.features .content-wrapper{
+  width: 100%;
+}
 /*-----------reviews-----------*/
 .reviews article div{
   width: 49%;
 }
+.reviews h2{
+  padding-bottom: 50px;
+}
+.reviews figure{
+  width: 49%;
+  display: flex;
+  
+}
+
+
 /*-----------footer-------------*/
 footer .content-wrapper{
   width: 100%;
@@ -669,6 +740,9 @@ footer .copyright{
   display: flex;
   justify-content: center;
 }
+footer h4{
+  font-size: 1.875em;
+}
 /*==========================================================================
 about page desktop
 ==========================================================================*/
@@ -677,6 +751,9 @@ about page desktop
   width: 95%;
   font-size: 3em;
 }
+.contact-content h4{
+  font-size: 1.875em;
+}
 
 /*=============================================================================
 faq page desktop
@@ -684,6 +761,10 @@ faq page desktop
 .faq h2{
   width: 100%;
   font-size: 3em;
+}
+.faq h4, .faq p{
+  font-size: 1.125em;
+  line-height: 1;
 }
 }
 @media print,
