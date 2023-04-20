@@ -269,16 +269,20 @@ aside{
 
 .features {
   display: flex;
-  justify-content: center;
   flex-flow: row wrap;
+  justify-content: center;
   background: url("../img/unplugged-retreat-features.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
 }
-.features-icon{
-  width: 60px;
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
+
+
 .features p{
   margin: 0;
   text-align: center;
@@ -323,9 +327,7 @@ section .reviews h3{
   flex-flow: row wrap;
   background-color: #2a423a;
 }
-.reviews figure{
-  width:100%;
-}
+
 
 /*=======================================================================================
 ABOUT PAGE
@@ -710,9 +712,8 @@ aside .content-wrapper .form{
 .features h2{
   width: 90%;
 }
-.features .content-wrapper{
-  width: 100%;
-}
+
+
 /*-----------reviews-----------*/
 .reviews article div{
   width: 49%;
