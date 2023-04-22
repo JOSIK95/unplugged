@@ -499,8 +499,6 @@ input[type=button] {
   margin: 100px 0;
 }
 header{
-  margin: 0;
-  display: flex;
   justify-content: space-around;
 }
 .header .content-wrapper{
@@ -509,11 +507,10 @@ header{
   margin: 33px 0;
 }
 .header nav{
-  width: 33%;
+  width: 20%;
 }
 header nav ul{
-  display: flex;
- justify-content: space-between;
+ justify-content:space-around;
  
 }
 
@@ -522,10 +519,6 @@ header nav ul{
 }
 header figure{
 width: 33%;
-display: flex;
-flex-flow: row wrap;
-justify-content: flex-start;
-align-content: center;
 }
 h1{
   line-height: 48px;
@@ -602,6 +595,7 @@ width: 100%;
   width: 75%;
   margin: 0;
 }
+
 /*----------footer-----------------*/
 
 
