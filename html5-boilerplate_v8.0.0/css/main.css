@@ -545,7 +545,7 @@ input[type=button] {
 @media only screen and (min-width: 768px){
 /*-------tablet styles---------*/
 .content-wrapper{
-  width: 640px;
+  max-width: 640px;
   margin: 100px 0;
 }
 header{
@@ -697,7 +697,7 @@ about page tablet
 .contact-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .contact-content h4 {
